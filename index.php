@@ -1,7 +1,7 @@
 <?PHP
 
 
-include ('sqlZugangsdaten.php');
+include ("sqlZugangsdaten.php");
 // Überprüfen ob über GET gesendet wurde.
 
 //if (isset($_GET['letsplay'])) {
@@ -16,7 +16,7 @@ include ('sqlZugangsdaten.php');
 function dbaseRequest(){
 $SQL_statment="SELECT * FROM test WHERE letsplay = the_medium"; 
 
-$resultset=mysql_query($SQL_statment);
+$resultset=mysql_query($SQL_statment,$db);
 $data=mysql_fetch_array($resultset);
 	
 	echo ("Counter" + $data[counterAktuell]);

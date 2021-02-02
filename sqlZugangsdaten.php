@@ -6,7 +6,7 @@ $database = "letsplaystodeszaehler";    //Geben Sie hier die Datenbank an in wel
 //Connect 
     $db = @mysql_connect($host, $user, $passw)
     or die ("Verbindungsaufnahme NICHT Erfolgreich!<br>Bitte gehen Sie nochmal zurück.<br>Sollte es immer noch nicht gehen, dann schreiben Sie mir doch bitte eine Mail.");
-    @mysql_select_db($database, $db)
+    @mysql_select_db($database)
     or die ("Verbindungsaufnahme mit Datenbank NICHT Erfolgreich!<br>Bitte gehen Sie nochmal zurück.<br>Sollte es immer noch nicht gehen, dann schreiben Sie mir doch bitte eine Mail.");
 //Connect!!ED!!
 ?>
