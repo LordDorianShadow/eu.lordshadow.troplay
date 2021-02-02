@@ -32,15 +32,11 @@ $data=mysql_fetch_array($resultset);
   <meta charset="UTF-8">
   <title>Suchanfrage an eine Datenbank über AJAX senden und empfangen</title>
 
-	 
+	</head>	 
 <body>	 
-  <script type="text/javascript">
-
-	  doccument.write(<?php dbaseRequest();?>)
-
-  </script>
-
- </head>
+ 
+<?echo("test");?>
+ 
 
 
 
