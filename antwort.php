@@ -8,7 +8,7 @@ if (isset($_GET['letsplay'])) {
  header('Content-Type: text/plain; charset=utf-8');
 $letsplay=$_GET['letsplay'];
 
-	echo($letsplay)
+	echo($letsplay);
  // Anweisung definieren
 
 $SQL_statment="SELECT * FROM test WHERE letsplay = ".$letsplay; 
