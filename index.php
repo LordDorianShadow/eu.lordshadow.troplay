@@ -19,7 +19,7 @@ $SQL_statment="SELECT * FROM test WHERE letsplay = the_medium";
 $resultset=mysql_query($SQL_statment,$db);
 $data=mysql_fetch_array($resultset);
 	
-	echo ("Counter" + $data[counterAktuell]);
+	echo ("Counter" + $data['counterAktuell']);
 	//echo ("Counter" + $data[counterGesammt]);
 	
 }
