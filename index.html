@@ -16,7 +16,7 @@
    if (suchbegriff.length > 3) {
 
     // XMLHTTP-Request zur Datei: antwort.php öffnen und den Suchbegriff anhängen.
-    xhr.open("GET", "phpDateien/antwort.php?suchbegriff=" + suchbegriff, true);
+    xhr.open("GET", "antwort.php?suchbegriff=" + suchbegriff, true);
 
     // XMLHTTP-Request senden.
     xhr.send();
@@ -42,7 +42,7 @@
 
 <button onClick="datenSenden()">suchen</button>
 	
-	<div id="ausgabe"></div>
+<div id="ausgabe"></div>
 
 </body>
 </html>
