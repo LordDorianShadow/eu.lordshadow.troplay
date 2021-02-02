@@ -1,5 +1,7 @@
 <?PHP
-include 'sqlZugangsdaten.php';
+
+
+include ('sqlZugangsdaten.php');
 // Überprüfen ob über GET gesendet wurde.
 
 //if (isset($_GET['letsplay'])) {
@@ -18,7 +20,7 @@ $resultset=mysql_query($SQL_statment);
 $data=mysql_fetch_array($resultset);
 	
 	echo ("Counter" + $data[counterAktuell]);
-	echo ("Counter" + $data[counterGesammt]);
+	//echo ("Counter" + $data[counterGesammt]);
 	
 }
 ?>
