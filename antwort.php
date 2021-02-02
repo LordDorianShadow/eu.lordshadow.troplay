@@ -1,12 +1,12 @@
 <?PHP
 include 'sqlZugangsdaten.php';
 // Überprüfen ob über GET gesendet wurde.
-if (isset($_POST['letsplay'])) {
+if (isset($_GET['letsplay'])) {
 
  // Den Zeichensatz über header() senden,
  // sonst werden Umlaute ggf. nicht richtig angezeigt.
  header('Content-Type: text/plain; charset=utf-8');
-$letsplay=$_POST['letsplay'];
+$letsplay=$_GET['letsplay'];
 
  // Anweisung definieren
 
