@@ -1,19 +1,50 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>Suchanfrage an eine Datenbank über AJAX senden und empfangen</title>
+<?php
+// Datenbankverbindung aufbauen, siehe oben...
+include ("antwort.php");
+	
+$spalten = [
+  'letsplay' => 'letsplay',
+  'counterAktuell' => 'Tode aktuell',
+  'counterGesamt' => 'Tode gesamt:',
+  'strasse' => 'Straße',
+  'plz' => 'PLZ',
+  'notiz' => 'Anmerkung'
+];
 
-	</head>	 
-<body>	 
- 
-<?echo("test");?>
- 
+?>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+<?php
+foreach ($spalten as $name) {
+  echo '<th>', htmlspecialchars($name), '</th>';
+}
+?>
+        </tr>
+      </thead>
+      <tbody>
+<?php
 
 
+foreach($results as $result) {
+  echo '<tr>';
 
-
-
-
-</body>
+  foreach ($spalten as $schluessel => $name) {
+    echo '<td>', htmlspecialchars($result[$schluessel]), '</td>';
+  }
+  
+  echo '</tr>';
+}
+?>
+      <tbody>
+    <table>
+  </body>
 </html>
