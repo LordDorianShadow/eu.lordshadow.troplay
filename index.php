@@ -1,4 +1,5 @@
 <?php
+header("Cache-Control: no store" );
 // Datenbankverbindung aufbauen, siehe oben...
 include ("antwort.php");
 	
