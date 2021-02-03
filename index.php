@@ -6,9 +6,6 @@ $spalten = [
   'letsplay' => 'letsplay',
   'counterAktuell' => 'Tode aktuell',
   'counterGesamt' => 'Tode gesamt:',
-  'strasse' => 'Straße',
-  'plz' => 'PLZ',
-  'notiz' => 'Anmerkung'
 ];
 
 ?>
